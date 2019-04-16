@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+/* @import url(font-awesome.min.css); */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
 /*
@@ -28,6 +28,26 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+/* cursor	 */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.ball {
+  pointer-events: none;
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: gray;
+  animation: implode 2s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
+
+/* end cursor */
 
 body {
 	line-height: 1;
@@ -79,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		-ms-overflow-style: scrollbar;
+		-ms-overflow-style: scroll;
 	}
 
 	@media screen and (max-width: 480px) {
